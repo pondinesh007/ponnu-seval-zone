@@ -1,0 +1,570 @@
+/* =========================================
+   PONNU SEVAL ZONE - FULL CSS
+========================================= */
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f2;
+    color: #222;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background: linear-gradient(135deg, #071d12, #123d26, #0b2417);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* HEADER BRAND */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* LOGO */
+
+.brand img {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #f4c542;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* WEBSITE TITLE */
+
+.brand h1 {
+    font-size: 42px;
+
+    color: #f4c542;
+
+    letter-spacing: 2px;
+}
+
+
+header p {
+    margin-top: 15px;
+
+    font-size: 17px;
+
+    color: #e8eee9;
+}
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.section {
+    max-width: 1400px;
+
+    margin: 40px auto;
+
+    padding: 30px 25px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border-top: 5px solid #d6a928;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* SECTION TITLE */
+
+.section h2 {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+
+    color: #123d26;
+}
+
+
+/* =========================================
+   PHOTO GRID - 4 PHOTOS IN ONE LINE
+========================================= */
+
+.photo-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   PHOTO CARD
+========================================= */
+
+.photo-box {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
+}
+
+
+.photo-box:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================
+   FULL SEVAL PHOTO
+   IMPORTANT - NO CROP
+========================================= */
+
+.photo-box img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* PHOTO NAME */
+
+.photo-box h3 {
+
+    padding: 12px 5px;
+
+    font-size: 17px;
+
+    color: #123d26;
+}
+
+
+/* =========================================
+   SALES COLLECTION
+========================================= */
+
+.sales {
+
+    border-top-color: #e0a800;
+}
+
+
+.sales h2 {
+
+    color: #b77900;
+}
+
+
+/* PRICE */
+
+.photo-box p {
+
+    padding-bottom: 15px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #c48a00;
+}
+
+
+/* =========================================
+   QUEENS SECTION
+========================================= */
+
+.queens {
+
+    border-top-color: #9b59b6;
+
+    background: linear-gradient(135deg, #ffffff, #faf6ff);
+}
+
+
+.queens h2 {
+
+    color: #70429a;
+}
+
+
+/* =========================================
+   SELL YOUR SEVAL SECTION
+========================================= */
+
+.sell-section {
+
+    margin-top: 50px;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background: linear-gradient(135deg, #071d12, #164c2e, #0b2417);
+}
+
+
+.sell-section h2 {
+
+    font-size: 34px;
+
+    color: #f4c542;
+
+    margin-bottom: 15px;
+}
+
+
+.sell-section p {
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+
+    color: #e8eee9;
+}
+
+
+/* SELL BUTTON */
+
+.sell-section button {
+
+    border: none;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    background: #f4c542;
+
+    color: #17210c;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.sell-section button:hover {
+
+    transform: scale(1.05);
+
+    background: #ffd45c;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background: #06140c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    border-top: 3px solid #d6a928;
+}
+
+
+footer h3 {
+
+    color: #f4c542;
+
+    margin-bottom: 8px;
+}
+
+
+footer p {
+
+    color: #b9c6bd;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .photo-container {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    header {
+
+        padding: 30px 15px;
+    }
+
+
+    .brand {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .brand img {
+
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .brand h1 {
+
+        font-size: 28px;
+    }
+
+
+    header p {
+
+        font-size: 14px;
+    }
+
+
+    .section {
+
+        margin: 25px 10px;
+
+        padding: 20px 10px;
+    }
+
+
+    .section h2 {
+
+        font-size: 23px;
+    }
+
+
+    /* MOBILE - 2 PHOTOS PER LINE */
+
+    .photo-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .photo-box h3 {
+
+        font-size: 13px;
+
+        padding: 8px 3px;
+    }
+
+
+    .photo-box p {
+
+        font-size: 13px;
+    }
+
+
+    .sell-section {
+
+        padding: 50px 15px;
+    }
+
+
+    .sell-section h2 {
+
+        font-size: 27px;
+    }
+
+}
+/* OLD CSS ABOVE */
+
+
+/* =================================
+   SEVAL DETAILS POPUP
+================================= */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.popup-content {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.popup-content img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: contain;
+    border-radius: 15px;
+    background: #f2f2f2;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #123d26;
+    z-index: 10;
+}
+
+.seval-details {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seval-details h2 {
+    color: #123d26;
+    font-size: 32px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #f4c542;
+    padding-bottom: 10px;
+}
+
+.seval-details p {
+    font-size: 18px;
+    margin: 12px 0;
+    padding: 12px;
+    background: #f4f7f2;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .popup-content {
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 18px;
+    }
+
+    .popup-content img {
+        max-height: 400px;
+    }
+
+    .seval-details {
+        padding: 5px;
+    }
+}
+.photo-container {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 15px !important;
+    width: 100% !important;
+}
+
+.photo-box {
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.photo-box img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: contain !important;
+    display: block !important;
+}
