@@ -551,20 +551,33 @@ footer p {
     }
 }
 .photo-container {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 15px !important;
-    width: 100% !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .photo-box {
     width: 100% !important;
     min-width: 0 !important;
 }
-
 .photo-box img {
-    width: 100% !important;
-    height: 250px !important;
-    object-fit: contain !important;
-    display: block !important;
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+}
+.photo-box {
+    background: #ffffff;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+}
+
+.photo-box h3 {
+    color: #174d32;
+    font-weight: bold;
+}
+
+.photo-box:hover {
+    border-color: #174d32;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
