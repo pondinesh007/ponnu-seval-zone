@@ -62,6 +62,26 @@ form.addEventListener("submit", function(event) {
     });
 
 });
+
+
+/* ================= SALES POPUP ================= */
+
+function openSale(image, name, age, weight, price, location, details) {
+
+    document.getElementById("popupImage").src = image;
+    document.getElementById("popupName").textContent = name;
+    document.getElementById("popupAge").textContent = age;
+    document.getElementById("popupWeight").textContent = weight;
+    document.getElementById("popupLocation").textContent = location;
+    document.getElementById("popupDetails").textContent = details;
+
+    // Popup-la Price HIDE
+    document.getElementById("popupPrice").parentElement.style.display = "none";
+
+    document.getElementById("sevalPopup").style.display = "flex";
+}
+/* ================= PONNU COLLECTION POPUP ================= */
+
 function openSeval(image, name, age, weight, location, details) {
 
     document.getElementById("popupImage").src = image;
@@ -76,9 +96,37 @@ function openSeval(image, name, age, weight, location, details) {
 
     document.getElementById("popupDetails").textContent = details;
 
+    // Ponnu Collection - Price HIDE
+    document.getElementById("popupPrice").parentElement.style.display = "none";
+
     document.getElementById("sevalPopup").style.display = "flex";
 }
 
+
+/* ================= PONNU / QUEENS SHOWCASE ================= */
+
+function openShowcase(image, name, age, weight, location, details) {
+
+    document.getElementById("popupImage").src = image;
+
+    document.getElementById("popupName").textContent = name;
+
+    document.getElementById("popupAge").textContent = age;
+
+    document.getElementById("popupWeight").textContent = weight;
+
+    document.getElementById("popupLocation").textContent = location;
+
+    document.getElementById("popupDetails").textContent = details;
+
+    /* Ponnu Collection / Queens - Price HIDE */
+    document.getElementById("popupPrice").parentElement.style.display = "none";
+
+    document.getElementById("sevalPopup").style.display = "flex";
+}
+
+
+/* ================= CLOSE POPUP ================= */
 
 function closeSeval() {
 
